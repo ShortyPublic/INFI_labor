@@ -1,14 +1,11 @@
 balance = 0
 while True:
-    print("Bitte wähle die Aktion: Einzahlen, Auszahlen, Kontostand, Beenden")
-    command = input()
+    command = input("Bitte wähle die Aktion: Einzahlen, Auszahlen, Kontostand, Beenden")
     if command == "Einzahlen":
-        print("Bitte Betrag eingeben")
-        addBal = int(input())
+        addBal = int(input("Bitte Betrag eingeben"))
         balance += addBal
     elif command == "Auszahlen":
-        print("Bitte Betrag eingeben")
-        remBal = int(input())
+        remBal = int(input("Bitte Betrag eingeben"))
         if remBal > balance:
             remBal = balance
         balance -= remBal
